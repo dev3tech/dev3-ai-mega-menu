@@ -1,0 +1,3322 @@
+# Copyright (C) 2026 DEV3 Technologies
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: DEV3 AI Mega Menu for WordPress 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/dev3-ai-mega-menu\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-24T23:12:16+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: dev3-ai-mega-menu\n"
+
+#. Plugin Name of the plugin
+#: dev3-ai-mega-menu.php
+msgid "DEV3 AI Mega Menu for WordPress"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: dev3-ai-mega-menu.php
+msgid "https://dev3.tech/item/dev3-ai-mega-menu"
+msgstr ""
+
+#. Description of the plugin
+#: dev3-ai-mega-menu.php
+msgid "AI-assisted mega menus: panels, columns, tabs, mobile accordion and off-canvas menus, built and audited with DEV3 AI."
+msgstr ""
+
+#. Author of the plugin
+#: dev3-ai-mega-menu.php
+msgid "DEV3 Technologies"
+msgstr ""
+
+#. Author URI of the plugin
+#: dev3-ai-mega-menu.php
+msgid "https://dev3.tech"
+msgstr ""
+
+#: includes/Admin/Admin_Page.php:40
+#: includes/Front/Frontend.php:245
+#: includes/Integrations/Builders.php:83
+#: includes/Integrations/Elementor_Widget.php:36
+#: build/block.js:1
+msgid "DEV3 AI Mega Menu"
+msgstr ""
+
+#: includes/Admin/Admin_Page.php:72
+#: build/admin.js:1
+msgid "Settings"
+msgstr ""
+
+#: includes/Ai/Assistant.php:33
+#: includes/Ai/Audit.php:38
+#: includes/Ai/Menu_Builder.php:671
+#: includes/Menu/Tree.php:111
+#: includes/Rest/Rest_Controller.php:216
+#: includes/Rest/Rest_Controller.php:263
+#: includes/Rest/Rest_Controller.php:282
+msgid "That menu does not exist."
+msgstr ""
+
+#: includes/Ai/Assistant.php:69
+msgid "The menu has no items yet."
+msgstr ""
+
+#: includes/Ai/Assistant.php:344
+#: build/admin.js:1
+msgid "Featured"
+msgstr ""
+
+#. translators: %s: occasion.
+#: includes/Ai/Assistant.php:346
+#, php-format
+msgid "%s picks"
+msgstr ""
+
+#: includes/Ai/Assistant.php:347
+msgid "Hand-picked favourites for the season. Take a look before they are gone."
+msgstr ""
+
+#: includes/Ai/Assistant.php:348
+msgid "Shop the collection"
+msgstr ""
+
+#: includes/Ai/Assistant.php:391
+msgid "New Year"
+msgstr ""
+
+#: includes/Ai/Assistant.php:392
+msgid "Valentine's Day"
+msgstr ""
+
+#: includes/Ai/Assistant.php:393
+#: includes/Ai/Assistant.php:394
+msgid "Spring"
+msgstr ""
+
+#: includes/Ai/Assistant.php:395
+msgid "Early summer"
+msgstr ""
+
+#: includes/Ai/Assistant.php:396
+#: includes/Ai/Assistant.php:397
+msgid "Summer"
+msgstr ""
+
+#: includes/Ai/Assistant.php:398
+msgid "Back to school"
+msgstr ""
+
+#: includes/Ai/Assistant.php:399
+#: includes/Ai/Assistant.php:400
+msgid "Autumn"
+msgstr ""
+
+#: includes/Ai/Assistant.php:401
+msgid "Black Friday"
+msgstr ""
+
+#: includes/Ai/Assistant.php:402
+msgid "Holiday season"
+msgstr ""
+
+#: includes/Ai/Assistant.php:423
+msgid "That menu item does not exist."
+msgstr ""
+
+#: includes/Ai/Audit.php:151
+msgid "The menu is empty"
+msgstr ""
+
+#: includes/Ai/Audit.php:151
+msgid "Add items or use “Build my menu”."
+msgstr ""
+
+#. translators: %d: depth.
+#: includes/Ai/Audit.php:156
+#, php-format
+msgid "The menu is %d levels deep"
+msgstr ""
+
+#. translators: %d: depth.
+#: includes/Ai/Audit.php:156
+msgid "Visitors rarely find items below the third level. Flatten deep branches into mega-menu columns."
+msgstr ""
+
+#. translators: %d: number of items.
+#: includes/Ai/Audit.php:160
+#, php-format
+msgid "%d top-level items"
+msgstr ""
+
+#. translators: %d: number of items.
+#: includes/Ai/Audit.php:160
+msgid "Aim for 7 or fewer top-level items so the bar fits and is easy to scan. Group the rest."
+msgstr ""
+
+#. translators: %s: label.
+#: includes/Ai/Audit.php:171
+#, php-format
+msgid "“%s” links to missing content"
+msgstr ""
+
+#. translators: %s: label.
+#: includes/Ai/Audit.php:171
+msgid "The page or category it points to was deleted, trashed or unpublished."
+msgstr ""
+
+#. translators: %s: label.
+#: includes/Ai/Audit.php:175
+#, php-format
+msgid "“%s” goes nowhere"
+msgstr ""
+
+#. translators: %s: label.
+#: includes/Ai/Audit.php:175
+msgid "It has no link and no submenu. Give it a destination or remove it."
+msgstr ""
+
+#: includes/Ai/Audit.php:178
+msgid "An item has no label"
+msgstr ""
+
+#: includes/Ai/Audit.php:178
+msgid "Screen readers and visitors need a text label."
+msgstr ""
+
+#. translators: %s: label.
+#: includes/Ai/Audit.php:181
+#, php-format
+msgid "“%s” is a vague label"
+msgstr ""
+
+#. translators: %s: label.
+#: includes/Ai/Audit.php:181
+msgid "Say what visitors will find there."
+msgstr ""
+
+#. translators: %s: label.
+#: includes/Ai/Audit.php:184
+#, php-format
+msgid "“%s” is long"
+msgstr ""
+
+#. translators: %s: label.
+#: includes/Ai/Audit.php:184
+msgid "Labels over 28 characters wrap and slow scanning. Shorten it."
+msgstr ""
+
+#. translators: %s: label.
+#: includes/Ai/Audit.php:188
+#, php-format
+msgid "“%s” is hidden"
+msgstr ""
+
+#. translators: %s: label.
+#: includes/Ai/Audit.php:188
+msgid "The label is hidden and there is no icon or image, so sighted visitors see nothing."
+msgstr ""
+
+#. translators: 1: label, 2: count.
+#: includes/Ai/Audit.php:192
+#, php-format
+msgid "“%1$s” has %2$d links"
+msgstr ""
+
+#. translators: 1: label, 2: count.
+#: includes/Ai/Audit.php:192
+msgid "Split long lists into groups of 5–10 links."
+msgstr ""
+
+#. translators: %s: label.
+#: includes/Ai/Audit.php:197
+#, php-format
+msgid "“%s” appears twice in the same group"
+msgstr ""
+
+#. translators: %s: label.
+#: includes/Ai/Audit.php:197
+msgid "Merge or rename one of them."
+msgstr ""
+
+#. translators: %s: label.
+#: includes/Ai/Audit.php:209
+#, php-format
+msgid "“%s” is a mega panel with one group"
+msgstr ""
+
+#. translators: %s: label.
+#: includes/Ai/Audit.php:209
+msgid "Use a simple dropdown, or add more groups or a promo block."
+msgstr ""
+
+#. translators: %s: label.
+#: includes/Ai/Audit.php:215
+#, php-format
+msgid "“%s” is linked more than twice"
+msgstr ""
+
+#. translators: %s: label.
+#: includes/Ai/Audit.php:215
+msgid "Repeated links add noise. Keep the most useful one."
+msgstr ""
+
+#: includes/Ai/Audit.php:248
+msgid "No link to the home page"
+msgstr ""
+
+#: includes/Ai/Audit.php:249
+msgid "Many visitors expect a Home item (or a linked logo)."
+msgstr ""
+
+#: includes/Ai/Audit.php:252
+#: includes/Ai/Menu_Builder.php:373
+#: includes/Ai/Menu_Builder.php:394
+msgid "Home"
+msgstr ""
+
+#: includes/Ai/Audit.php:271
+msgid "The contact page is not in the menu"
+msgstr ""
+
+#: includes/Ai/Audit.php:272
+msgid "Visitors look for a way to get in touch in the main navigation."
+msgstr ""
+
+#: includes/Ai/Audit.php:294
+msgid "The shop is not in the menu"
+msgstr ""
+
+#: includes/Ai/Audit.php:295
+msgid "Add the shop page or product categories so visitors can browse products."
+msgstr ""
+
+#: includes/Ai/Menu_Builder.php:240
+msgid "DEV3 AI returned no usable menu items. Try again or use the automatic builder."
+msgstr ""
+
+#: includes/Ai/Menu_Builder.php:410
+msgid "Shop"
+msgstr ""
+
+#: includes/Ai/Menu_Builder.php:451
+#: includes/Ai/Menu_Builder.php:457
+msgid "Blog"
+msgstr ""
+
+#: includes/Ai/Menu_Builder.php:464
+msgid "More"
+msgstr ""
+
+#: includes/Ai/Menu_Builder.php:654
+msgid "The draft has no items to add."
+msgstr ""
+
+#: includes/Ai/Menu_Builder.php:657
+#: build/admin.js:1
+msgid "Main menu"
+msgstr ""
+
+#: includes/Core3/Api/Ai.php:212
+msgid "Unsupported image type."
+msgstr ""
+
+#: includes/Core3/Api/Ai.php:216
+msgid "The image data is invalid."
+msgstr ""
+
+#: includes/Core3/Api/Ai.php:292
+msgid "AI features are turned off."
+msgstr ""
+
+#: includes/Core3/Api/Ai.php:292
+msgid "Turn AI back on in API Config."
+msgstr ""
+
+#: includes/Core3/Api/Ai.php:294
+msgid "Storefront AI is turned off."
+msgstr ""
+
+#: includes/Core3/Api/Ai.php:294
+msgid "Turn storefront AI back on in API Config."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:49
+msgid "No Gemini API key is configured."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:50
+msgid "Open the plugin settings → API Config and paste a key from Google AI Studio."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:63
+msgid "AI paused: the monthly AI budget is reached."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:64
+msgid "Raise the monthly cap in API Config, or wait until the budget resets on the 1st of next month."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:80
+msgid "The AI service took too long to respond."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:81
+msgid "Try again, shorten the prompt, lower Max Output Tokens, or switch to the faster model."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:89
+msgid "Your server could not reach the AI service (Google Gemini API)."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:90
+msgid "Check the server's internet connection or firewall (outbound HTTPS to generativelanguage.googleapis.com)."
+msgstr ""
+
+#. translators: %s: transport error message.
+#: includes/Core3/Api/Api_Error.php:98
+#, php-format
+msgid "Request to the AI service failed: %s"
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:99
+#: includes/Core3/Api/Gemini_Client.php:250
+#: includes/Core3/Api/Gemini_Client.php:422
+msgid "Try again in a moment."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:128
+msgid "The Gemini API key is not valid."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:129
+msgid "Create a new key in Google AI Studio and paste it in API Config."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:137
+msgid "Your Gemini quota is exhausted."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:137
+msgid "AI rate limit reached."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:139
+msgid "Wait for the quota to reset, enable billing on your Google Cloud project, or switch to a model with remaining quota."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:140
+msgid "Wait a few seconds and try again."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:148
+msgid "This API key is not allowed to use Gemini."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:149
+msgid "Enable the Generative Language API for the key's project, and check any key restrictions (HTTP referrer / IP)."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:156
+msgid "The selected Gemini model is not available."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:157
+msgid "Pick another model in API Config — click \"Refresh models\" to load the ones your key can use."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:164
+msgid "The AI service is not available in your server's region."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:165
+msgid "Host the site in a supported region or use a key from a supported project."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:172
+msgid "The AI service is temporarily unavailable."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:173
+msgid "This is on Google's side. Try again shortly or switch models."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:180
+msgid "The AI service rejected the request."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:181
+msgid "Adjust the prompt or settings and try again."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:250
+msgid "The AI returned an incomplete embedding batch."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:368
+msgid "The AI blocked this image request for safety reasons."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:368
+msgid "The AI did not return an image."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:369
+#: includes/Core3/Api/Gemini_Client.php:472
+#: includes/Core3/Api/Gemini_Client.php:508
+msgid "Rephrase the prompt and try again."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:369
+msgid "Try again, or describe the image more concretely."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:421
+msgid "The AI returned malformed data."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:471
+msgid "The AI blocked this request for safety reasons."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:507
+msgid "The AI stopped because the response was flagged."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:515
+msgid "The AI ran out of output tokens before writing an answer."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:516
+msgid "Increase Max Output Tokens in API Config, or set Reasoning to \"Low\"."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:523
+msgid "The AI returned an empty response."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:524
+msgid "Try again or rephrase the prompt."
+msgstr ""
+
+#: includes/Core3/Api/Prompts.php:124
+msgid "Unknown prompt template."
+msgstr ""
+
+#: includes/Core3/Core/Jobs.php:90
+msgid "Unknown job type."
+msgstr ""
+
+#: includes/Core3/Core/Jobs.php:116
+msgid "The job could not be saved."
+msgstr ""
+
+#: includes/Core3/Core/Jobs.php:238
+#: build/admin.js:1
+msgid "Failed"
+msgstr ""
+
+#: includes/Core3/Core/Jobs.php:339
+#: includes/Core3/Rest/Core_Controller.php:112
+msgid "Job not found."
+msgstr ""
+
+#: includes/Core3/Core/Privacy.php:33
+#: includes/Core3/Core/Privacy.php:34
+#: includes/Core3/Core/Privacy.php:165
+msgid "AI usage log"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: includes/Core3/Core/Privacy.php:85
+#, php-format
+msgid "This site uses %s, which sends the content needed for AI features (for example product details, reviews or form text) to Google Gemini, operated by Google LLC, as a data processor. Only the fields needed for the requested feature are sent. Google's terms and privacy policy apply: https://ai.google.dev/gemini-api/terms"
+msgstr ""
+
+#: includes/Core3/Core/Privacy.php:87
+msgid "The plugin keeps a usage log (time, feature, token counts and the user account that triggered the request) to show AI usage and costs to administrators. It does not store the prompts."
+msgstr ""
+
+#: includes/Core3/Core/Privacy.php:169
+msgid "Feature"
+msgstr ""
+
+#: includes/Core3/Core/Privacy.php:173
+#: build/admin.js:1
+msgid "Model"
+msgstr ""
+
+#: includes/Core3/Core/Privacy.php:177
+#: build/admin.js:1
+msgid "Tokens"
+msgstr ""
+
+#: includes/Core3/Core/Privacy.php:181
+msgid "Date"
+msgstr ""
+
+#: includes/Core3/Data/Usage_Repository.php:194
+msgid "Deleted user"
+msgstr ""
+
+#: includes/Core3/Rest/Base_Controller.php:72
+msgid "Your session has expired. Reload the editor and try again."
+msgstr ""
+
+#: includes/Core3/Rest/Base_Controller.php:75
+#: includes/Core3/Rest/Core_Controller.php:115
+msgid "You do not have permission to do that."
+msgstr ""
+
+#: includes/Core3/Rest/Base_Controller.php:94
+msgid "Cross-origin requests are not allowed."
+msgstr ""
+
+#: includes/Core3/Rest/Base_Controller.php:104
+msgid "Too many requests. Please wait a moment."
+msgstr ""
+
+#: includes/Front/Frontend.php:289
+msgid "Choose a menu in the block settings."
+msgstr ""
+
+#: includes/Front/Renderer.php:229
+#: includes/Integrations/Builders.php:91
+#: includes/Integrations/Elementor_Widget.php:88
+#: includes/Integrations/Elementor_Widget.php:93
+#: build/admin.js:1
+#: build/block.js:1
+msgid "Menu"
+msgstr ""
+
+#: includes/Front/Renderer.php:235
+msgid "Close menu"
+msgstr ""
+
+#. translators: %s: menu item label.
+#: includes/Front/Renderer.php:450
+#, php-format
+msgid "%s submenu"
+msgstr ""
+
+#. translators: %s: tab label.
+#: includes/Front/Renderer.php:603
+#, php-format
+msgid "View all %s"
+msgstr ""
+
+#: includes/Front/Widgets.php:205
+#: build/admin.js:1
+msgid "Search…"
+msgstr ""
+
+#: includes/Front/Widgets.php:208
+msgid "Search for:"
+msgstr ""
+
+#: includes/Front/Widgets.php:213
+#: build/admin.js:1
+msgid "Search"
+msgstr ""
+
+#: includes/Integrations/Builders.php:46
+#: build/block.js:1
+msgid "Default (from Locations)"
+msgstr ""
+
+#: includes/Integrations/Builders.php:85
+#: build/admin.js:1
+msgid "DEV3 AI"
+msgstr ""
+
+#: includes/Integrations/Builders.php:86
+msgid "Accessible mega menu"
+msgstr ""
+
+#: includes/Integrations/Builders.php:98
+#: includes/Integrations/Elementor_Widget.php:102
+#: build/admin.js:1
+#: build/block.js:1
+msgid "Style"
+msgstr ""
+
+#: includes/Integrations/Builders.php:104
+#: includes/Integrations/Elementor_Widget.php:111
+#: build/admin.js:1
+#: build/block.js:1
+msgid "Open submenus on"
+msgstr ""
+
+#: includes/Integrations/Builders.php:107
+#: includes/Integrations/Builders.php:117
+#: includes/Integrations/Elementor_Widget.php:114
+#: includes/Integrations/Elementor_Widget.php:127
+#: build/admin.js:1
+#: build/block.js:1
+msgid "Default"
+msgstr ""
+
+#: includes/Integrations/Builders.php:108
+#: includes/Integrations/Elementor_Widget.php:115
+#: build/block.js:1
+msgid "Hover"
+msgstr ""
+
+#: includes/Integrations/Builders.php:109
+#: includes/Integrations/Elementor_Widget.php:116
+#: build/block.js:1
+msgid "Click"
+msgstr ""
+
+#: includes/Integrations/Builders.php:114
+#: includes/Integrations/Elementor_Widget.php:124
+#: build/admin.js:1
+#: build/block.js:1
+msgid "Mobile menu"
+msgstr ""
+
+#: includes/Integrations/Builders.php:118
+#: includes/Integrations/Elementor_Widget.php:128
+#: build/block.js:1
+msgid "Accordion"
+msgstr ""
+
+#: includes/Integrations/Builders.php:119
+#: includes/Integrations/Elementor_Widget.php:129
+#: build/block.js:1
+msgid "Off-canvas"
+msgstr ""
+
+#: includes/Menu/Locations.php:171
+msgid "Blocks, shortcodes, page builders and block-theme navigation"
+msgstr ""
+
+#: includes/Menu/Themes.php:66
+msgid "Light"
+msgstr ""
+
+#: includes/Menu/Themes.php:70
+msgid "Midnight"
+msgstr ""
+
+#: includes/Menu/Themes.php:96
+msgid "Indigo"
+msgstr ""
+
+#: includes/Menu/Themes.php:110
+msgid "Minimal (inherit theme)"
+msgstr ""
+
+#: includes/Menu/Themes.php:126
+msgid "Boutique"
+msgstr ""
+
+#: includes/Menu/Themes.php:210
+msgid "Custom style"
+msgstr ""
+
+#: includes/Menu/Tree.php:114
+msgid "A menu can have at most 600 items."
+msgstr ""
+
+#: includes/Rest/Rest_Controller.php:197
+msgid "Give the menu a name."
+msgstr ""
+
+#: includes/Rest/Rest_Controller.php:597
+msgid "Pick a top-level item of this menu."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Request cancelled."
+msgstr ""
+
+#: build/admin.js:1
+msgid "You appear to be offline."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Check your internet connection, then try again."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Could not reach your WordPress site."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Check your connection or reload the editor."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Your session has expired."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Save your work and reload the page."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Something went wrong."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Loading"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Generating…"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Generate with DEV3 AI"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Dismiss"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI paused: monthly budget reached"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Adjust the cap"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Try again"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Use a hex colour like #4f46e5."
+msgstr ""
+
+#: build/admin.js:1
+msgid "picker"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Estimated AI spend this month"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI paused"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI off"
+msgstr ""
+
+#. translators: %s: cap
+#: build/admin.js:1
+#, js-format
+msgid "of %s cap"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI turned off"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI paused · cap reached"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Near cap"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Monthly AI budget used"
+msgstr ""
+
+#. translators: 1: requests, 2: tokens
+#: build/admin.js:1
+#, js-format
+msgid "%1$s requests · %2$s tokens"
+msgstr ""
+
+#. translators: %s: date
+#: build/admin.js:1
+#, js-format
+msgid "resets %s"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Set a monthly cap"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Queued"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Running"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Done"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Cancelled"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Dismiss notification"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Choose from list"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Custom model ID…"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Google Gemini API key"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Create a free key in Google AI Studio, paste it here and click “Validate & save”. The key is encrypted in your database and never sent to the browser."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Get an API key"
+msgstr ""
+
+#: build/admin.js:1
+msgid "(opens in a new tab)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "The key is defined by the DEV3MM_GEMINI_API_KEY constant in wp-config.php."
+msgstr ""
+
+#: build/admin.js:1
+msgid "API key"
+msgstr ""
+
+#. translators: %d: number of models
+#: build/admin.js:1
+#, js-format
+msgid "Connected — %d models available to this key."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Validate & save"
+msgstr ""
+
+#: build/admin.js:1
+msgid "API key removed."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Remove key"
+msgstr ""
+
+#: build/admin.js:1
+msgid "OpenSSL is not available on this server, so the key is only obfuscated. Consider defining DEV3MM_GEMINI_API_KEY in wp-config.php instead."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Models & generation"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Fast is used for most tasks; Pro for complex, long-form or structured work."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Refresh models"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Engine settings saved."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Save engine settings"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Fast model"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Recommended: gemini-2.5-flash"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Pro model"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Recommended: gemini-2.5-pro"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Image model"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Used for image generation. Default: gemini-2.5-flash-image"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Embedding model"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Used for semantic search. Default: gemini-embedding-001"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Temperature"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Lower = focused and consistent, higher = more creative (0–1)."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Max output tokens"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Upper limit per answer."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Reasoning"
+msgstr ""
+
+#: build/admin.js:1
+msgid "“Low” keeps generations fast and cheap; “Auto” lets the model think longer."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Low (fast)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Auto (model decides)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Budget & safety"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Costs are estimated from token counts and Google’s list prices. Check exact billing in Google AI Studio."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Budget and safety settings saved."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Save budget & safety"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Monthly AI budget cap"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI pauses when the estimated spend this month reaches the cap. 0 = no cap."
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI features"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Turn off to stop every AI call. The plugin keeps working without AI."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Storefront AI"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Kill switch for visitor-facing AI. Visitors get the non-AI fallback."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Cache AI results"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Reuse answers for identical requests to save tokens."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Mask personal data"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Replace emails, phone and card numbers before text is sent to Google Gemini."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Pagination"
+msgstr ""
+
+#. translators: 1: first row, 2: last row, 3: total rows
+#: build/admin.js:1
+#, js-format
+msgid "%1$s–%2$s of %3$s"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Previous page"
+msgstr ""
+
+#. translators: 1: page, 2: pages
+#: build/admin.js:1
+#, js-format
+msgid "Page %1$s of %2$s"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Next page"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Actions"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Nothing here yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Sort by"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Requests"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Est. cost"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No requests yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Token counts come from the AI provider’s usage metadata; costs are estimates. Check exact billing in Google AI Studio / Cloud Console."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Period"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Last 7 days"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Last 30 days"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Last 90 days"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Total tokens"
+msgstr ""
+
+#. translators: 1: input, 2: output
+#: build/admin.js:1
+#, js-format
+msgid "%1$s in · %2$s out"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Avg. response"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Errors"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Requests per day"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Requests per day chart"
+msgstr ""
+
+#. translators: 1: date, 2: requests, 3: tokens
+#: build/admin.js:1
+#, js-format
+msgid "%1$s — %2$s requests, %3$s tokens"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No requests in this period yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Usage appears here as soon as an AI feature runs."
+msgstr ""
+
+#: build/admin.js:1
+msgid "By task"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Task"
+msgstr ""
+
+#: build/admin.js:1
+msgid "By model"
+msgstr ""
+
+#: build/admin.js:1
+msgid "By user"
+msgstr ""
+
+#: build/admin.js:1
+msgid "User"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Recent requests"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No requests logged yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Time"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Where"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Time (s)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Status"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Plugin sections"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Section"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Close"
+msgstr ""
+
+#: build/admin.js:1
+msgid "DEV3 AI draft"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Accept"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Changes"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Side by side"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Draft"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Not saved yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Draft view"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Edit JSON"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Edit draft"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Current"
+msgstr ""
+
+#. translators: %s: token count
+#: build/admin.js:1
+#, js-format
+msgid "%s tokens"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Cached"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Reject"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Regenerate"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Done editing"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Edit"
+msgstr ""
+
+#: build/admin.js:1
+msgid "The JSON is not valid. Fix it or regenerate."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Icon"
+msgstr ""
+
+#. translators: %s: icon name
+#: build/admin.js:1
+#, js-format
+msgid "Change (%s)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Choose icon"
+msgstr ""
+
+#. translators: %s: icon label
+#: build/admin.js:1
+#, js-format
+msgid "Use “%s”"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Remove"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Choose an icon"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Search icons"
+msgstr ""
+
+#: build/admin.js:1
+msgid "e.g. shop, phone, gift"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Icons"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No icons match."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Image"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Use this image"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Replace image"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Choose image"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Choose a menu…"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No menus yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Menu preview"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add items to see a preview."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Preview size"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Desktop"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Mobile"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Link"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Flyout"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Mega panel"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Tabs"
+msgstr ""
+
+#: build/admin.js:1
+msgid "High"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Medium"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Low"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Great"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Good"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Needs work"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Poor"
+msgstr ""
+
+#. translators: %d: score
+#: build/admin.js:1
+#, js-format
+msgid "UX score %d out of 100"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Fix applied."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Menu UX audit"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Finds menus that are too deep or crowded, vague or long labels, broken and dead-end links, and important pages that are missing. DEV3 AI adds a review of label clarity and grouping."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Quick audit"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Reviewing…"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Audit with DEV3 AI"
+msgstr ""
+
+#. translators: 1: issues 2: items 3: depth
+#: build/admin.js:1
+#, js-format
+msgid "%1$d issues · %2$d items · %3$d levels deep"
+msgstr ""
+
+#. translators: %s: error
+#: build/admin.js:1
+#, js-format
+msgid "DEV3 AI review skipped: %s The rule checks below still ran."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Suggested label:"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Fixed"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Apply label"
+msgstr ""
+
+#. translators: %s: label
+#: build/admin.js:1
+#, js-format
+msgid "Add “%s”"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Open builder"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No issues found"
+msgstr ""
+
+#: build/admin.js:1
+msgid "This menu is clear, shallow and complete."
+msgstr ""
+
+#. translators: %s: path
+#: build/admin.js:1
+#, js-format
+msgid "Label for %s"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Remove from draft"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Build my menu"
+msgstr ""
+
+#: build/admin.js:1
+msgid "DEV3 AI reads your pages, categories and products and proposes a complete mega menu: top items, columns, groups and labels. You review and edit it before anything is saved."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Top-level items (max)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Read from"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Pages"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Post categories"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Products & product categories"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Notes for DEV3 AI (optional)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "e.g. Put Sale first, keep the About pages under one item, we are a B2B store"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Designing your menu…"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Build with DEV3 AI"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Auto-build without AI"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Connect DEV3 AI in API Config to use the AI builder. The automatic builder works without it."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Automatic draft"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Not saved yet. Edit labels or remove items, then choose where to save it."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Top-level items"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Items in total"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Mega panels"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Read"
+msgstr ""
+
+#. translators: 1: pages 2: categories
+#: build/admin.js:1
+#, js-format
+msgid "%1$d pages · %2$d categories"
+msgstr ""
+
+#. translators: %s: seconds
+#: build/admin.js:1
+#, js-format
+msgid "in %s s"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Preview"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Save to"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Action"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Create a new menu"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Replace the items of a menu"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add to the end of a menu"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Menu name"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Replacing removes the current items of that menu."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Menu saved"
+msgstr ""
+
+#. translators: %s: menu name
+#: build/admin.js:1
+#, js-format
+msgid "“%s” is ready. Fine-tune it in the Menu Builder."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Accept and save menu"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No icon"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Icons & images"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Suggests an icon from the built-in set for every item, and images from your media library or the linked page’s featured image."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Match by keywords"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Choosing icons…"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Suggest with DEV3 AI"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Suggested by DEV3 AI"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Keyword matches"
+msgstr ""
+
+#. translators: %s: error
+#: build/admin.js:1
+#, js-format
+msgid "DEV3 AI was not available (%s), so keyword matches are shown."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Icon suggestions"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Apply"
+msgstr ""
+
+#. translators: %s: label
+#: build/admin.js:1
+#, js-format
+msgid "Apply to %s"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Item"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Image (optional)"
+msgstr ""
+
+#. translators: %s: label
+#: build/admin.js:1
+#, js-format
+msgid "Image for %s"
+msgstr ""
+
+#. translators: %d: id
+#: build/admin.js:1
+#, js-format
+msgid "Image %d"
+msgstr ""
+
+#: build/admin.js:1
+msgid "None found"
+msgstr ""
+
+#. translators: %d: count
+#: build/admin.js:1
+#, js-format
+msgid "Icons applied to %d items."
+msgstr ""
+
+#. translators: %d: count
+#: build/admin.js:1
+#, js-format
+msgid "Apply %d selected"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Reject all"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Labels & descriptions"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Clear, short labels and one-line descriptions for every item, written in your site’s language. Review each suggestion, edit it, and apply only what you like."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Writing labels…"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Write labels with DEV3 AI"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Select all"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Select none"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Suggested labels"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Suggested label"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Suggested description"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Show descriptions under sub-items in the menu"
+msgstr ""
+
+#. translators: %d: count
+#: build/admin.js:1
+#, js-format
+msgid "%d items updated."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Badge"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Headline"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Text"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Button label"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Promo preview"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI promo panel"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Generate a seasonal promo block (headline, text, button and featured products) for a mega panel’s side column."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Show it in the panel of"
+msgstr ""
+
+#: build/admin.js:1
+msgid "This menu has no items"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Occasion"
+msgstr ""
+
+#: build/admin.js:1
+msgid "e.g. Black Friday, Summer, Back to school"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Leave empty to use the current season."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Real offer (optional)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "e.g. 20% off outerwear until Sunday"
+msgstr ""
+
+#: build/admin.js:1
+msgid "DEV3 AI never invents discounts."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Tone"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Friendly"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Premium"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Playful"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Urgent"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Pick products from"
+msgstr ""
+
+#: build/admin.js:1
+msgid "On sale"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Best sellers"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Newest"
+msgstr ""
+
+#: build/admin.js:1
+msgid "A category"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Product category"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Choose…"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Writing promo…"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Use a template"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Install WooCommerce to feature products in promos. The text and button work on any site."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Promo added"
+msgstr ""
+
+#. translators: %s: item
+#: build/admin.js:1
+#, js-format
+msgid "It now shows in the “%s” panel. Edit it any time in the Menu Builder (Panel tab)."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Accept and add to panel"
+msgstr ""
+
+#. translators: %s: url
+#: build/admin.js:1
+#, js-format
+msgid "Button links to %s"
+msgstr ""
+
+#: build/admin.js:1
+msgid "UX audit"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Promo panel"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI Studio"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Build, label, audit and decorate menus with DEV3 AI. Nothing changes on your site until you accept a draft."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Connect DEV3 AI"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add your API key"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add a Google Gemini API key to use the AI tools. The automatic builder, quick audit, keyword icons and promo templates work without it."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Raise the monthly cap in API Config or wait for next month."
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI tools"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Posts"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Categories"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Product categories"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Products"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Custom link"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add menu items"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Pick content from your site or add a custom link."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Cancel"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add to menu"
+msgstr ""
+
+#. translators: %d: count
+#: build/admin.js:1
+#, js-format
+msgid "Add %d items"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add under"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Top level"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Content type"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Label"
+msgstr ""
+
+#: build/admin.js:1
+msgid "URL"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Leave empty (or #) for a heading that only opens its submenu."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Nothing found"
+msgstr ""
+
+#: build/admin.js:1
+msgid "(no title)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Menu column (a child item + its links)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Recent posts"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Search box"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Promo block"
+msgstr ""
+
+#: build/admin.js:1
+msgid "HTML"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Shortcode"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Synced pattern (reusable block)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Title (optional)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No products found."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Child item"
+msgstr ""
+
+#: build/admin.js:1
+msgid "(no label)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add child items first"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Shows the item as a column heading with its own sub-items below."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Category"
+msgstr ""
+
+#: build/admin.js:1
+msgid "All categories"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Number of posts"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Show featured images"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Show"
+msgstr ""
+
+#: build/admin.js:1
+msgid "From a category"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Hand-picked"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Number of products"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Placeholder"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Search in"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Everything"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Caption"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Button link"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Colour"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Accent gradient"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Light tint"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Dark"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Vivid"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Synced pattern"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No synced patterns yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Move up"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Move down"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Remove widget"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add widget"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add a widget…"
+msgstr ""
+
+#: build/admin.js:1
+msgid "From the blog"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Popular now"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Seasonal picks"
+msgstr ""
+
+#: build/admin.js:1
+msgid "New"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Shop now"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Automatic columns"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Child items fill the panel as columns. Add a row to place columns, products, posts, images or promos yourself."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add a custom row"
+msgstr ""
+
+#. translators: %d: row number
+#: build/admin.js:1
+#, js-format
+msgid "Row %d"
+msgstr ""
+
+#. translators: %d: used grid columns
+#: build/admin.js:1
+#, js-format
+msgid "%d / 12 wide"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Column"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Remove row"
+msgstr ""
+
+#. translators: %d: column number
+#: build/admin.js:1
+#, js-format
+msgid "Column %d width"
+msgstr ""
+
+#. translators: %d: span
+#: build/admin.js:1
+#, js-format
+msgid "%d/12"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Remove column"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add row"
+msgstr ""
+
+#. translators: %d: count
+#: build/admin.js:1
+#, js-format
+msgid "%d child items not placed: they appear in automatic columns below your rows."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Side column"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Shown on the right of the panel: promos, products, images."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Item settings"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Select an item"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Choose an item in the structure to edit its label, icon, badge and mega panel."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Content"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Display"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Panel"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Use # for a heading that only opens its submenu."
+msgstr ""
+
+#: build/admin.js:1
+msgid "The linked content is missing or unpublished"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Description"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Shown under the label when “Show description” is on (Display tab)."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Title attribute"
+msgstr ""
+
+#: build/admin.js:1
+msgid "CSS classes"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Open in a new tab"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Column image"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Image (thumbnail)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Badge text"
+msgstr ""
+
+#: build/admin.js:1
+msgid "e.g. New, Sale"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Badge style"
+msgstr ""
+
+#: build/admin.js:1
+msgid "New (green)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Sale (red)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Hot (orange)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Info (blue)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Custom colour"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Badge colour"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Show description"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Hide label (icon only)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "The label stays available to screen readers."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Hide on mobile"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Hide on desktop"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Submenu type"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Automatic"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Flyout dropdown"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Mega panel (columns)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Mega panel with tabs"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Automatic: a mega panel when children have their own children, else a flyout."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Columns"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Panel width"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Location default"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Full window width"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Menu bar width"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Fit content"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Each child item becomes a tab; its own children fill the tab panel."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Child items open as a dropdown; deeper levels fly out to the side."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add child items, or set the type to Mega panel and add widgets below."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Menu Builder"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Build the structure, then turn top-level items into mega panels with columns, tabs, products, posts and promos."
+msgstr ""
+
+#: build/admin.js:1
+msgid "New menu"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Menu saved."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Save menu"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Saved"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Discard unsaved changes?"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Navigation block"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Not assigned to a location"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Unsaved changes"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Delete menu"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Create an empty menu, or let DEV3 AI build a complete mega menu from your pages, categories and products."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Create a menu"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Build my menu with DEV3 AI"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Structure"
+msgstr ""
+
+#. translators: %d: item count
+#: build/admin.js:1
+#, js-format
+msgid "%d items. Use the arrows to reorder and nest (up to 3 levels work best)."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add items"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Menu items"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Broken"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Move out a level"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Make sub-item"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Remove item"
+msgstr ""
+
+#: build/admin.js:1
+msgid "This menu is empty"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add pages, categories, products or custom links."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Live preview"
+msgstr ""
+
+#: build/admin.js:1
+msgid "The real front-end menu with your unsaved changes. Hover or click items to open panels."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Not live yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Open Locations"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Turn on the mega menu for a theme location (or add the DEV3 AI Mega Menu block) to show it on your site."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Menu created. Add items to get started."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Create menu"
+msgstr ""
+
+#: build/admin.js:1
+msgid "e.g. Main menu"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Delete this menu?"
+msgstr ""
+
+#. translators: %s: menu name
+#: build/admin.js:1
+#, js-format
+msgid "“%s” and all its items will be removed. This cannot be undone."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Menu deleted."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Dashboard"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Create or build a menu"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Start from scratch or let DEV3 AI build one from your content."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add a mega panel"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Turn a top item into columns, tabs, products or a promo."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Edit panels"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Show it in your header"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Turn on a location"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add the block or replace the Navigation block."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Replace your theme’s menu with the mega menu."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Locations"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Audit the menu"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Check depth, labels, broken links and missing pages."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Run audit"
+msgstr ""
+
+#: build/admin.js:1
+msgid "A full mega menu from your pages, categories and products."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Clear labels and one-line descriptions in your language."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Too deep, unclear labels, missing links, with one-click fixes."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Seasonal promo blocks with featured products."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Matching icons and images for every item."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Accessible mega menus for any theme, designed and checked with DEV3 AI."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add a Google Gemini API key to turn on the AI tools. Menus, panels, styles and the quick audit all work without it."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Menus"
+msgstr ""
+
+#. translators: %d: items
+#: build/admin.js:1
+#, js-format
+msgid "%d items in total"
+msgstr ""
+
+#. translators: %d: promos
+#: build/admin.js:1
+#, js-format
+msgid "%d with a promo"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Live locations"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Block nav"
+msgstr ""
+
+#: build/admin.js:1
+msgid "On your site"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Last UX score"
+msgstr ""
+
+#. translators: %d: issues
+#: build/admin.js:1
+#, js-format
+msgid "%d issues found"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Run your first audit"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Quick start"
+msgstr ""
+
+#. translators: 1: done 2: total
+#: build/admin.js:1
+#, js-format
+msgid "%1$d of %2$d done"
+msgstr ""
+
+#: build/admin.js:1
+msgid "(done)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "DEV3 AI tools"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Every result is a draft: you accept, edit or reject it."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Compatibility"
+msgstr ""
+
+#. translators: %s: theme
+#: build/admin.js:1
+#, js-format
+msgid "Active theme: %s"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Block theme: use the block or Navigation replacement"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Classic theme: theme locations"
+msgstr ""
+
+#: build/admin.js:1
+msgid "WooCommerce: product widgets on"
+msgstr ""
+
+#: build/admin.js:1
+msgid "WooCommerce not active"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Elementor widget ready"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Elementor not active"
+msgstr ""
+
+#: build/admin.js:1
+msgid "WPBakery element ready"
+msgstr ""
+
+#: build/admin.js:1
+msgid "WPBakery not active"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Keyboard & screen-reader accessible (WCAG 2.2 AA)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Hover (and click / keyboard)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Click only"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Fade"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Fade + slide"
+msgstr ""
+
+#: build/admin.js:1
+msgid "None"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Horizontal bar"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Vertical (sidebar)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Start"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Center"
+msgstr ""
+
+#: build/admin.js:1
+msgid "End"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Spread out"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Accordion (drops down)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Off-canvas drawer"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Left"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Right"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Hover delay (ms)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Animation"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Orientation"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Item alignment"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Mega panel width"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Switch to the mobile menu below"
+msgstr ""
+
+#. translators: %d: pixels
+#: build/admin.js:1
+#, js-format
+msgid "%d px"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Never (always desktop)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Drawer side"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Toggle button label"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Sticky on scroll"
+msgstr ""
+
+#: build/admin.js:1
+msgid "The bar stays at the top while visitors scroll."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Sticky on mobile too"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Search box at the end of the bar"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Accessible name (aria-label)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Defaults to the menu name. Screen readers announce it, e.g. “Main”."
+msgstr ""
+
+#: build/admin.js:1
+msgid "— None —"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Choose where the mega menu replaces your theme’s menu, and how it behaves on desktop and mobile."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Locations saved."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Save locations"
+msgstr ""
+
+#: build/admin.js:1
+msgid "You are using a block theme"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Block themes place menus with the Navigation block. Either add the “DEV3 AI Mega Menu” block to your header template, or let the plugin replace the Navigation block (see “Blocks, shortcodes & builders” below)."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Your theme registers no menu locations"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Use the block, the shortcode or a page-builder widget instead (below)."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Mega menu on"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Theme menu"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Menu shown here"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Use the DEV3 AI Mega Menu here"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Off: your theme renders this location as before."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Blocks, shortcodes & builders"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Settings used by the DEV3 AI Mega Menu block, the [dev3mm_menu] shortcode, the Elementor and WPBakery widgets, and the Navigation-block replacement."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Replace the Navigation block (block themes)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Off"
+msgstr ""
+
+#: build/admin.js:1
+msgid "First Navigation block on each page (usually the header)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Every Navigation block"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Menu to show instead"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Unsaved location settings are applied to the preview."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Preview location"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No menu assigned to this location"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Settings saved."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Loading, DEV3 AI behaviour and data handling."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Save settings"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Performance"
+msgstr ""
+
+#: build/admin.js:1
+msgid "The front-end script is about 3 KB and the stylesheet about 8 KB (gzipped). No AI calls run on page load."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Load front-end files"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Only when a mega menu is used (recommended)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "On every page"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Choose “every page” if a cache or optimisation plugin strips late-loaded styles."
+msgstr ""
+
+#: build/admin.js:1
+msgid "How the AI tools read your site and write copy."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Language for AI labels"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Site language (automatic)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "e.g. German, Français, Japanese. Empty = the site language."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Pages to read when building"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Larger sites take longer; 400 covers most."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Include WooCommerce products and categories"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Data"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Delete all plugin data when uninstalling"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Removes styles, location settings, item settings and the usage log. Your WordPress menus themselves are kept."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Delete data on uninstall?"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Mega-menu settings will be lost if you uninstall the plugin. You can turn this off again any time."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Yes, delete on uninstall"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Menu bar"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Background"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Hover background"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Hover text"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Accent (current item, buttons)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Panels"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Links"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Column headings"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Descriptions"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Link hover"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Borders"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Mobile & badges"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Mobile background"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Mobile text"
+msgstr ""
+
+#: build/admin.js:1
+msgid "“New” badge"
+msgstr ""
+
+#: build/admin.js:1
+msgid "“Sale” badge"
+msgstr ""
+
+#: build/admin.js:1
+msgid "“Hot” badge"
+msgstr ""
+
+#: build/admin.js:1
+msgid "“Info” badge"
+msgstr ""
+
+#. translators: %s: style name
+#: build/admin.js:1
+#, js-format
+msgid "%s (copy)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Styles saved."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Styles"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Pick a preset or duplicate one and fine-tune colours, sizes and shape. Use a style per location in Locations."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Save styles"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Preset"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Custom"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Duplicate"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Delete"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Duplicate to customise"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Presets are read-only so updates never overwrite your work. Duplicate this preset to edit it."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Style name"
+msgstr ""
+
+#: build/admin.js:1
+msgid "A hex colour, “transparent” or “inherit”."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Shape & type"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Bar height (px)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Corner radius (px)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Font size (px)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Font weight"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Item spacing (px)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Panel padding (px)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Panel shadow"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Soft"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Strong"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Font family"
+msgstr ""
+
+#: build/admin.js:1
+msgid "“inherit” uses your theme font."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Uppercase top-level labels"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Preview with menu"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Delete this style?"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Locations that use it fall back to the Light preset."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Delete style"
+msgstr ""
+
+#: build/admin.js:1
+msgid "API Config"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Usage Logs"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Connect Google Gemini, pick models and set a monthly AI budget."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Requests, tokens and estimated cost of every DEV3 AI feature."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Made by DEV3 Technologies · AI by Google Gemini, using your own API key."
+msgstr ""
+
+#: build/block.js:1
+msgid "An accessible mega menu with panels, tabs, flyouts and a mobile menu."
+msgstr ""
+
+#: build/block.js:1
+msgid "— Choose a menu —"
+msgstr ""
+
+#: build/block.js:1
+msgid "Choose the menu to show. Build and style menus under DEV3 AI Mega Menu in the dashboard."
+msgstr ""

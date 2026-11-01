@@ -1,0 +1,179 @@
+/* DEV3 AI Mega Menu admin screens (on top of the core UI kit). Everything is scoped to .dev3mm-root. */
+
+.dev3mm-root .dev3mm-ui-label { display: block; font-weight: 600; font-size: 13px; color: var( --dev3mm-text ); margin-bottom: 6px; }
+.dev3mm-root .dev3mm-muted { color: var( --dev3mm-text-muted ); font-size: 13px; margin: 0; }
+.dev3mm-root .dev3mm-stack { display: flex; flex-direction: column; gap: 16px; }
+.dev3mm-root .dev3mm-grow { flex: 1 1 auto; }
+.dev3mm-root .dev3mm-grow-field { flex: 1 1 260px; min-width: 0; max-width: 420px; }
+.dev3mm-root .dev3mm-inline { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center; }
+.dev3mm-root .dev3mm-flip svg { transform: rotate( 180deg ); }
+.dev3mm-root .dev3mm-hide-label .dev3mm-ui-check__label { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect( 0, 0, 0, 0 ); white-space: nowrap; }
+.dev3mm-root .dev3mm-hide-label { gap: 0; }
+.dev3mm-root .dev3mm-subhead { margin: 8px 0 0; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var( --dev3mm-text-muted ); }
+.dev3mm-root .dev3mm-toggles { display: grid; grid-template-columns: repeat( auto-fit, minmax( 240px, 1fr ) ); gap: 12px 24px; }
+.dev3mm-root .dev3mm-field-block { min-width: 0; }
+.dev3mm-root .dev3mm-fieldset { border: 1px solid var( --dev3mm-border ); border-radius: var( --dev3mm-radius ); padding: 16px; margin: 0; min-width: 0; display: flex; flex-direction: column; gap: 16px; }
+.dev3mm-root .dev3mm-fieldset legend { font-weight: 700; font-size: 13px; padding: 0 6px; }
+.dev3mm-root code { font-family: var( --dev3mm-mono ); font-size: 12px; background: var( --dev3mm-surface-2 ); padding: 2px 6px; border-radius: 4px; word-break: break-all; }
+
+/* Icon + media pickers */
+.dev3mm-root .dev3mm-icon-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.dev3mm-root .dev3mm-icon-preview, .dev3mm-root .dev3mm-media-preview { width: 40px; height: 40px; flex: none; display: inline-flex; align-items: center; justify-content: center; border: 1px solid var( --dev3mm-border ); border-radius: var( --dev3mm-radius-sm ); background: var( --dev3mm-surface ); color: var( --dev3mm-text ); overflow: hidden; }
+.dev3mm-root .dev3mm-icon-preview.is-empty, .dev3mm-root .dev3mm-media-preview.is-empty { border-style: dashed; color: var( --dev3mm-text-subtle ); }
+.dev3mm-root .dev3mm-media-preview img { width: 100%; height: 100%; object-fit: cover; }
+.dev3mm-root .dev3mm-icon-grid { display: grid; grid-template-columns: repeat( auto-fill, minmax( 92px, 1fr ) ); gap: 8px; margin-top: 12px; max-height: 52vh; overflow-y: auto; padding: 2px; }
+.dev3mm-root .dev3mm-icon-cell { display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 12px 6px; border: 1px solid var( --dev3mm-border ); border-radius: var( --dev3mm-radius-sm ); background: var( --dev3mm-surface ); color: var( --dev3mm-text ); cursor: pointer; font-size: 12px; min-height: 76px; }
+.dev3mm-root .dev3mm-icon-cell:hover { border-color: var( --dev3mm-brand-line ); background: var( --dev3mm-brand-soft ); }
+.dev3mm-root .dev3mm-icon-cell.is-selected { border-color: var( --dev3mm-brand ); box-shadow: 0 0 0 1px var( --dev3mm-brand ); background: var( --dev3mm-brand-soft ); }
+.dev3mm-root .dev3mm-icon-cell:focus-visible { outline: 2px solid var( --dev3mm-focus ); outline-offset: 2px; }
+
+/* Segmented control */
+.dev3mm-root .dev3mm-seg { display: inline-flex; padding: 3px; gap: 2px; border-radius: 8px; background: var( --dev3mm-surface-2 ); border: 1px solid var( --dev3mm-border ); }
+.dev3mm-root .dev3mm-seg__btn { border: 0; background: transparent; padding: 6px 12px; min-height: 32px; border-radius: 6px; font-weight: 600; font-size: 13px; color: var( --dev3mm-text-muted ); cursor: pointer; }
+.dev3mm-root .dev3mm-seg__btn.is-active { background: var( --dev3mm-surface ); color: var( --dev3mm-text ); box-shadow: 0 1px 2px rgba( 0, 0, 0, .08 ); }
+.dev3mm-root .dev3mm-seg__btn:focus-visible { outline: 2px solid var( --dev3mm-focus ); outline-offset: 1px; }
+
+/* Live preview */
+.dev3mm-root .dev3mm-preview { border: 1px solid var( --dev3mm-border ); border-radius: var( --dev3mm-radius ); background: #eef0f5; padding: 12px; overflow: hidden; }
+.dev3mm-root .dev3mm-preview__frame { display: block; width: 100%; border: 0; border-radius: 6px; background: #f6f7fb; box-shadow: 0 1px 3px rgba( 15, 23, 42, .08 ); }
+.dev3mm-root .dev3mm-preview.is-mobile .dev3mm-preview__frame { width: 375px; max-width: 100%; margin: 0 auto; border-radius: 22px; box-shadow: 0 0 0 8px #1f2937, 0 10px 30px rgba( 15, 23, 42, .25 ); }
+.dev3mm-root .dev3mm-preview.is-mobile { padding: 24px 12px; }
+.dev3mm-root .dev3mm-preview__empty { padding: 24px; text-align: center; }
+.dev3mm-root .dev3mm-preview-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+
+/* Builder */
+.dev3mm-root .dev3mm-menubar .dev3mm-ui-card__body { padding-top: 14px; padding-bottom: 14px; }
+.dev3mm-root .dev3mm-menubar__row { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 12px 16px; }
+.dev3mm-root .dev3mm-menubar__select { flex: 1 1 260px; max-width: 380px; min-width: 0; }
+.dev3mm-root .dev3mm-builder { display: grid; grid-template-columns: minmax( 0, 5fr ) minmax( 0, 6fr ); gap: 16px; align-items: start; }
+@container ( max-width: 900px ) { .dev3mm-root .dev3mm-builder { grid-template-columns: minmax( 0, 1fr ); } }
+@media ( max-width: 1100px ) { .dev3mm-root .dev3mm-builder { grid-template-columns: minmax( 0, 1fr ); } }
+.dev3mm-root .dev3mm-builder__side { min-width: 0; position: sticky; top: calc( var( --dev3mm-admin-bar, 32px ) + 12px ); }
+@media ( max-width: 1100px ) { .dev3mm-root .dev3mm-builder__side { position: static; } }
+.dev3mm-root .dev3mm-tree { list-style: none; margin: 0; padding: 6px; }
+.dev3mm-root .dev3mm-tree__row { display: flex; align-items: center; gap: 4px; margin: 0; padding-inline-start: calc( var( --depth, 0 ) * 22px ); border-radius: 8px; position: relative; }
+.dev3mm-root .dev3mm-tree__row::before { content: ""; position: absolute; inset-inline-start: calc( var( --depth, 0 ) * 22px - 12px ); top: 0; bottom: 0; width: 1px; background: var( --dev3mm-border ); display: none; }
+.dev3mm-root .dev3mm-tree__row[style*="--depth: 1"]::before, .dev3mm-root .dev3mm-tree__row[style*="--depth: 2"]::before, .dev3mm-root .dev3mm-tree__row[style*="--depth: 3"]::before { display: block; }
+.dev3mm-root .dev3mm-tree__row:hover { background: var( --dev3mm-surface-2 ); }
+.dev3mm-root .dev3mm-tree__row.is-selected { background: var( --dev3mm-brand-soft ); box-shadow: inset 3px 0 0 var( --dev3mm-brand ); }
+.dev3mm-root .dev3mm-tree__main { flex: 1; min-width: 0; display: flex; align-items: center; gap: 8px; min-height: 44px; padding: 6px 8px; border: 0; background: transparent; text-align: start; font: inherit; color: var( --dev3mm-text ); cursor: pointer; border-radius: 8px; }
+.dev3mm-root .dev3mm-tree__main:focus-visible { outline: 2px solid var( --dev3mm-focus ); outline-offset: -2px; }
+.dev3mm-root .dev3mm-tree__icon { width: 24px; height: 24px; flex: none; display: inline-flex; align-items: center; justify-content: center; color: var( --dev3mm-text-muted ); }
+.dev3mm-root .dev3mm-tree__dot { width: 6px; height: 6px; border-radius: 50%; background: var( --dev3mm-border-strong ); }
+.dev3mm-root .dev3mm-tree__title { flex: 0 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-weight: 500; }
+.dev3mm-root .dev3mm-tree__row[style*="--depth: 0"] .dev3mm-tree__title { font-weight: 650; }
+.dev3mm-root .dev3mm-tree__actions { display: inline-flex; flex: none; gap: 0; opacity: .55; transition: opacity .15s; }
+.dev3mm-root .dev3mm-tree__row:hover .dev3mm-tree__actions, .dev3mm-root .dev3mm-tree__row.is-selected .dev3mm-tree__actions, .dev3mm-root .dev3mm-tree__actions:focus-within { opacity: 1; }
+.dev3mm-root .dev3mm-tree__row.is-invalid .dev3mm-tree__title { color: var( --dev3mm-danger ); }
+@media ( max-width: 600px ) {
+	.dev3mm-root .dev3mm-tree__row { flex-wrap: wrap; padding-inline-start: calc( var( --depth, 0 ) * 12px ); }
+	.dev3mm-root .dev3mm-tree__actions { opacity: 1; width: 100%; justify-content: flex-end; padding-bottom: 4px; }
+	.dev3mm-root .dev3mm-tree__main { flex-wrap: wrap; }
+}
+
+/* Panel editor */
+.dev3mm-root .dev3mm-panel-editor { display: flex; flex-direction: column; gap: 12px; }
+.dev3mm-root .dev3mm-prow { border: 1px solid var( --dev3mm-border ); border-radius: var( --dev3mm-radius ); background: var( --dev3mm-surface-2 ); padding: 12px; display: flex; flex-direction: column; gap: 10px; }
+.dev3mm-root .dev3mm-prow--aside { background: var( --dev3mm-brand-soft ); border-color: var( --dev3mm-brand-line ); }
+.dev3mm-root .dev3mm-prow__head { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
+.dev3mm-root .dev3mm-prow__cols { display: grid; grid-template-columns: repeat( 12, minmax( 0, 1fr ) ); gap: 8px; }
+.dev3mm-root .dev3mm-pcol { grid-column: span var( --span, 3 ); min-width: 0; background: var( --dev3mm-surface ); border: 1px dashed var( --dev3mm-border-strong ); border-radius: 8px; padding: 8px; display: flex; flex-direction: column; gap: 8px; }
+@container ( max-width: 640px ) { .dev3mm-root .dev3mm-pcol { grid-column: 1 / -1; } }
+@media ( max-width: 782px ) { .dev3mm-root .dev3mm-pcol { grid-column: 1 / -1; } }
+.dev3mm-root .dev3mm-pcol__head { display: flex; gap: 4px; align-items: center; }
+.dev3mm-root .dev3mm-pcol__head > :first-child { flex: 1; }
+.dev3mm-root .dev3mm-widget { border: 1px solid var( --dev3mm-border ); border-radius: 8px; background: var( --dev3mm-surface ); }
+.dev3mm-root .dev3mm-widget__head { display: flex; align-items: center; gap: 2px; padding-inline-end: 2px; }
+.dev3mm-root .dev3mm-widget__toggle { flex: 1; min-width: 0; display: flex; align-items: center; gap: 8px; border: 0; background: transparent; padding: 8px; min-height: 40px; text-align: start; font: inherit; cursor: pointer; color: var( --dev3mm-text ); border-radius: 8px; }
+.dev3mm-root .dev3mm-widget__toggle:focus-visible { outline: 2px solid var( --dev3mm-focus ); outline-offset: -2px; }
+.dev3mm-root .dev3mm-widget__summary { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 13px; color: var( --dev3mm-text-muted ); }
+.dev3mm-root .dev3mm-widget__actions { display: inline-flex; flex: none; }
+.dev3mm-root .dev3mm-widget__body { padding: 12px; border-top: 1px solid var( --dev3mm-border ); }
+.dev3mm-root .dev3mm-addwidget { display: flex; gap: 6px; align-items: center; }
+.dev3mm-root .dev3mm-addwidget > :first-child { flex: 1; min-width: 0; }
+.dev3mm-root .dev3mm-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.dev3mm-root .dev3mm-chip { border: 1px solid var( --dev3mm-border-strong ); background: var( --dev3mm-surface ); border-radius: 999px; padding: 6px 12px; min-height: 32px; font-size: 12px; cursor: pointer; color: var( --dev3mm-text ); }
+.dev3mm-root .dev3mm-chip.is-on { background: var( --dev3mm-brand ); border-color: var( --dev3mm-brand ); color: #fff; }
+.dev3mm-root .dev3mm-chip:focus-visible { outline: 2px solid var( --dev3mm-focus ); outline-offset: 2px; }
+
+/* Add items */
+.dev3mm-root .dev3mm-picklist { max-height: 46vh; overflow-y: auto; display: flex; flex-direction: column; gap: 2px; border: 1px solid var( --dev3mm-border ); border-radius: 8px; padding: 8px 12px; }
+.dev3mm-root .dev3mm-picklist .dev3mm-ui-check { min-height: 36px; align-items: center; }
+
+/* Styles */
+.dev3mm-root .dev3mm-styles { display: grid; grid-template-columns: minmax( 220px, 280px ) minmax( 0, 1fr ); gap: 16px; align-items: start; }
+@media ( max-width: 1000px ) { .dev3mm-root .dev3mm-styles { grid-template-columns: minmax( 0, 1fr ); } }
+.dev3mm-root .dev3mm-stylelist { list-style: none; margin: 0; padding: 6px; display: flex; flex-direction: column; gap: 2px; }
+.dev3mm-root .dev3mm-stylelist li { margin: 0; }
+.dev3mm-root .dev3mm-stylelist__item { width: 100%; display: flex; align-items: center; gap: 10px; padding: 8px; min-height: 52px; border: 0; background: transparent; border-radius: 8px; cursor: pointer; text-align: start; font: inherit; color: var( --dev3mm-text ); }
+.dev3mm-root .dev3mm-stylelist__item:hover { background: var( --dev3mm-surface-2 ); }
+.dev3mm-root .dev3mm-stylelist__item.is-selected { background: var( --dev3mm-brand-soft ); box-shadow: inset 3px 0 0 var( --dev3mm-brand ); }
+.dev3mm-root .dev3mm-stylelist__item:focus-visible { outline: 2px solid var( --dev3mm-focus ); outline-offset: -2px; }
+.dev3mm-root .dev3mm-stylelist__name { flex: 1; min-width: 0; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.dev3mm-root .dev3mm-swatch { width: 54px; height: 38px; flex: none; border-radius: 6px; overflow: hidden; border: 1px solid var( --dev3mm-border ); display: flex; flex-direction: column; background: #f3f4f6; }
+.dev3mm-root .dev3mm-swatch__bar { height: 12px; display: flex; gap: 3px; align-items: center; padding: 0 4px; }
+.dev3mm-root .dev3mm-swatch__bar i { width: 8px; height: 2px; background: currentColor; border-radius: 2px; }
+.dev3mm-root .dev3mm-swatch__panel { flex: 1; margin: 2px 6px 4px; border: 1px solid; border-radius: 3px; display: flex; flex-direction: column; gap: 2px; padding: 3px; }
+.dev3mm-root .dev3mm-swatch__panel b { height: 2px; width: 70%; border-radius: 2px; }
+.dev3mm-root .dev3mm-swatch__panel b:nth-child( 3 ) { width: 40%; }
+
+/* AI: draft tree */
+.dev3mm-root .dev3mm-dtree { list-style: none; margin: 0; padding: 0; }
+.dev3mm-root .dev3mm-dtree--root { border: 1px solid var( --dev3mm-border ); border-radius: var( --dev3mm-radius ); padding: 8px; max-height: 460px; overflow-y: auto; background: var( --dev3mm-surface ); }
+.dev3mm-root .dev3mm-dtree__node { margin: 0; }
+.dev3mm-root .dev3mm-dtree__row { display: flex; align-items: center; gap: 8px; padding: 4px 4px 4px calc( var( --depth, 0 ) * 22px + 4px ); border-radius: 6px; }
+.dev3mm-root .dev3mm-dtree__row:hover { background: var( --dev3mm-surface-2 ); }
+.dev3mm-root .dev3mm-dtree__row .dev3mm-ui-field { flex: 1 1 200px; min-width: 0; max-width: 340px; }
+.dev3mm-root .dev3mm-dtree__icon { width: 20px; flex: none; display: inline-flex; justify-content: center; color: var( --dev3mm-text-muted ); }
+.dev3mm-root .dev3mm-dtree__ref { flex: none; color: var( --dev3mm-text-muted ); }
+@media ( max-width: 600px ) {
+	.dev3mm-root .dev3mm-dtree__row { flex-wrap: wrap; padding-inline-start: calc( var( --depth, 0 ) * 10px + 4px ); }
+	.dev3mm-root .dev3mm-dtree__ref { display: none; }
+}
+
+/* AI: audit */
+.dev3mm-root .dev3mm-audit-head { display: flex; align-items: center; gap: 16px; }
+.dev3mm-root .dev3mm-audit-head__grade { margin: 0 0 2px; font-size: 18px; }
+.dev3mm-root .dev3mm-ring { flex: none; }
+.dev3mm-root .dev3mm-issues { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.dev3mm-root .dev3mm-issue { margin: 0; display: flex; gap: 12px; align-items: flex-start; justify-content: space-between; padding: 12px 14px; border: 1px solid var( --dev3mm-border ); border-radius: var( --dev3mm-radius ); border-inline-start-width: 4px; background: var( --dev3mm-surface ); }
+.dev3mm-root .dev3mm-issue.is-high { border-inline-start-color: var( --dev3mm-danger ); }
+.dev3mm-root .dev3mm-issue.is-medium { border-inline-start-color: var( --dev3mm-warning ); }
+.dev3mm-root .dev3mm-issue.is-low { border-inline-start-color: var( --dev3mm-info ); }
+.dev3mm-root .dev3mm-issue__main { min-width: 0; display: flex; flex-direction: column; gap: 4px; }
+.dev3mm-root .dev3mm-issue__title { margin: 2px 0 0; font-weight: 650; }
+.dev3mm-root .dev3mm-issue__fix { margin: 2px 0 0; font-size: 13px; }
+.dev3mm-root .dev3mm-issue__actions { flex: none; }
+@media ( max-width: 600px ) { .dev3mm-root .dev3mm-issue { flex-direction: column; } }
+
+/* AI: icons + promo */
+.dev3mm-root .dev3mm-thumbs { display: inline-flex; gap: 6px; flex-wrap: wrap; }
+.dev3mm-root .dev3mm-thumb { width: 44px; height: 44px; padding: 0; border: 2px solid transparent; border-radius: 8px; overflow: hidden; cursor: pointer; background: var( --dev3mm-surface-2 ); }
+.dev3mm-root .dev3mm-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.dev3mm-root .dev3mm-thumb.is-selected { border-color: var( --dev3mm-brand ); }
+.dev3mm-root .dev3mm-thumb:focus-visible { outline: 2px solid var( --dev3mm-focus ); outline-offset: 2px; }
+.dev3mm-root .dev3mm-promo-review { display: grid; grid-template-columns: minmax( 0, 3fr ) minmax( 260px, 2fr ); gap: 20px; align-items: start; }
+@media ( max-width: 1000px ) { .dev3mm-root .dev3mm-promo-review { grid-template-columns: minmax( 0, 1fr ); } }
+.dev3mm-root nav.dev3mm.dev3mm-promo-preview { max-width: 340px; margin-bottom: 8px; }
+
+/* Dashboard */
+.dev3mm-root .dev3mm-steps { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
+.dev3mm-root .dev3mm-step { margin: 0; display: flex; align-items: center; gap: 12px; padding: 10px 4px; border-bottom: 1px solid var( --dev3mm-border ); }
+.dev3mm-root .dev3mm-step:last-child { border-bottom: 0; }
+.dev3mm-root .dev3mm-step__mark { width: 28px; height: 28px; flex: none; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-weight: 700; font-size: 13px; background: var( --dev3mm-surface-2 ); color: var( --dev3mm-text-muted ); border: 1px solid var( --dev3mm-border ); }
+.dev3mm-root .dev3mm-step.is-done .dev3mm-step__mark { background: var( --dev3mm-success ); color: #fff; border-color: var( --dev3mm-success ); }
+.dev3mm-root .dev3mm-step__body { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.dev3mm-root .dev3mm-step.is-done .dev3mm-step__body strong { color: var( --dev3mm-text-muted ); }
+.dev3mm-root .dev3mm-tools { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.dev3mm-root .dev3mm-tools li { margin: 0; }
+.dev3mm-root .dev3mm-tool { display: flex; align-items: center; gap: 12px; padding: 10px 12px; border-radius: 8px; border: 1px solid var( --dev3mm-border ); background: var( --dev3mm-surface ); text-decoration: none; color: var( --dev3mm-text ); transition: border-color .15s, background-color .15s; }
+.dev3mm-root .dev3mm-tool:hover { border-color: var( --dev3mm-brand-line ); background: var( --dev3mm-brand-soft ); color: var( --dev3mm-text ); }
+.dev3mm-root .dev3mm-tool:focus-visible { outline: 2px solid var( --dev3mm-focus ); outline-offset: 2px; }
+.dev3mm-root .dev3mm-tool__icon { width: 36px; height: 36px; flex: none; border-radius: 8px; display: inline-flex; align-items: center; justify-content: center; color: #fff; background: linear-gradient( 135deg, var( --dev3mm-ai-from, #6366f1 ), var( --dev3mm-ai-to, #a855f7 ) ); }
+.dev3mm-root .dev3mm-tool__body { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 1px; }
+.dev3mm-root .dev3mm-compat { display: flex; flex-wrap: wrap; gap: 8px; }
+.dev3mm-root .dev3mm-snippet { display: flex; flex-direction: column; gap: 4px; }
+.dev3mm-root .dev3mm-snippet code { display: block; padding: 10px 12px; }
+.dev3mm-root .dev3mm-preview__scaler { position: relative; overflow: hidden; width: 100%; }
+.dev3mm-root .dev3mm-preview__scaler .dev3mm-preview__frame { position: absolute; top: 0; left: 0; transform-origin: 0 0; max-width: none; }
+.dev3mm-root .dev3mm-structure .dev3mm-tree { max-height: 70vh; overflow-y: auto; }

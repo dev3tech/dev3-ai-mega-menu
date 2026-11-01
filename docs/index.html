@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DEV3 AI Mega Menu for WordPress — Documentation</title>
+<style>
+	:root { --ink:#111827; --muted:#4b5563; --line:#e5e7eb; --brand:#4f46e5; --soft:#eef2ff; --warn:#fef3c7; --bg:#ffffff; --code:#f3f4f6; }
+	@media (prefers-color-scheme: dark) { :root { --ink:#e5e7eb; --muted:#9ca3af; --line:#374151; --brand:#a5b4fc; --soft:#1e1b4b; --warn:#3b2f0b; --bg:#0b1020; --code:#1f2937; } }
+	* { box-sizing: border-box; }
+	body { margin:0; font:16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color:var(--ink); background:var(--bg); }
+	.layout { display:grid; grid-template-columns:250px 1fr; max-width:1200px; margin:0 auto; }
+	nav { position:sticky; top:0; height:100vh; overflow:auto; padding:32px 20px; border-right:1px solid var(--line); font-size:14px; }
+	nav a { display:block; color:var(--muted); text-decoration:none; padding:4px 0; }
+	nav a:hover { color:var(--brand); }
+	nav strong { display:block; margin:16px 0 4px; font-size:12px; text-transform:uppercase; letter-spacing:.06em; color:var(--ink); }
+	main { padding:40px 48px 80px; min-width:0; }
+	h1 { font-size:32px; margin:0 0 6px; } h2 { font-size:22px; margin:48px 0 10px; padding-top:8px; border-top:1px solid var(--line); } h3 { font-size:17px; margin:24px 0 6px; }
+	.lead { color:var(--muted); font-size:18px; }
+	code, kbd { background:var(--code); padding:1px 6px; border-radius:4px; font-size:.9em; }
+	pre { background:var(--code); padding:14px 16px; border-radius:8px; overflow:auto; font-size:13px; }
+	.tip { background:var(--soft); border-left:4px solid var(--brand); padding:12px 16px; border-radius:6px; margin:16px 0; }
+	.warn { background:var(--warn); border-left:4px solid #d97706; padding:12px 16px; border-radius:6px; margin:16px 0; }
+	table { border-collapse:collapse; width:100%; font-size:14px; } th, td { text-align:left; border-bottom:1px solid var(--line); padding:8px 10px; vertical-align:top; }
+	img.shot { max-width:100%; border:1px solid var(--line); border-radius:8px; margin:12px 0; }
+	@media (max-width: 820px) { .layout { grid-template-columns:1fr; } nav { position:static; height:auto; border-right:0; border-bottom:1px solid var(--line); } main { padding:24px 16px 60px; } table { display:block; overflow-x:auto; } }
+</style>
+</head>
+<body>
+<div class="layout">
+<nav aria-label="Contents">
+	<strong>Getting started</strong>
+	<a href="#install">Installation</a>
+	<a href="#quick-start">Quick start</a>
+	<a href="#api-key">Gemini API key</a>
+	<strong>Features</strong>
+	<a href="#builder">Menu Builder</a>
+	<a href="#panels">Mega panels &amp; widgets</a>
+	<a href="#tabs">Tabs &amp; flyouts</a>
+	<a href="#items">Icons, images, badges</a>
+	<a href="#locations">Locations &amp; behaviour</a>
+	<a href="#block-themes">Block themes</a>
+	<a href="#embeds">Block, shortcode, Elementor, WPBakery</a>
+	<a href="#styles">Styles</a>
+	<a href="#mobile">Mobile menus</a>
+	<a href="#a11y">Accessibility</a>
+	<strong>DEV3 AI</strong>
+	<a href="#ai-build">Build my menu</a>
+	<a href="#ai-labels">Labels &amp; descriptions</a>
+	<a href="#ai-audit">UX audit</a>
+	<a href="#ai-promo">Promo panel</a>
+	<a href="#ai-icons">Icons &amp; images</a>
+	<a href="#ai-cost">Budget &amp; usage</a>
+	<strong>More</strong>
+	<a href="#performance">Performance</a>
+	<a href="#developers">Developers (hooks, REST)</a>
+	<a href="#privacy">Privacy</a>
+	<a href="#faq">FAQ</a>
+	<a href="#troubleshooting">Troubleshooting</a>
+	<a href="#changelog">Changelog</a>
+</nav>
+<main>
+<h1>DEV3 AI Mega Menu for WordPress</h1>
+<p class="lead">Accessible mega menus for classic and block themes: columns, tabs, flyouts, products, posts and promos. DEV3 AI builds the menu from your content, writes labels, audits usability and suggests icons. Every AI result is a draft you accept, edit or reject.</p>
+<img class="shot" src="screenshots/1-mega-panel-promo.png" alt="A mega panel with three link columns and a promo block with two products">
+
+<h2 id="install">Installation</h2>
+<ol>
+	<li>In WordPress go to <b>Plugins → Add New → Upload Plugin</b>, choose <code>dev3-ai-mega-menu.zip</code> and activate it.</li>
+	<li>Open <b>DEV3 AI Mega Menu</b> in the admin menu.</li>
+</ol>
+<p>Requirements: WordPress 6.0+, PHP 7.4+ (tested to 8.3). WooCommerce 8+ is optional (product widgets and promo products). No licence key or activation is needed.</p>
+
+<h2 id="quick-start">Quick start (5 minutes)</h2>
+<ol>
+	<li><b>Get a menu.</b> Use an existing WordPress menu, create one in <b>Menu Builder → New menu</b>, or open <b>AI Studio → Build my menu</b> and click <b>Auto-build without AI</b> (or <b>Build with DEV3 AI</b> once a key is set).</li>
+	<li><b>Make a mega panel.</b> In the Menu Builder select a top-level item → <b>Panel</b> tab → <i>Submenu type: Mega panel</i>. Children become columns automatically; add rows to place products, posts, a search box or a promo.</li>
+	<li><b>Show it.</b> Classic theme: <b>Locations</b> → pick the menu for your header location and turn on <i>Use the DEV3 AI Mega Menu here</i>. Block theme: see <a href="#block-themes">Block themes</a>.</li>
+	<li><b>Pick a style</b> in <b>Styles</b> (or duplicate a preset and edit it) and select it per location.</li>
+	<li><b>Audit it</b> in <b>AI Studio → UX audit</b>.</li>
+</ol>
+
+<h2 id="api-key">Gemini API key setup</h2>
+<ol>
+	<li>Go to <a href="https://aistudio.google.com/app/apikey">Google AI Studio → API keys</a> and create a key.</li>
+	<li>In WordPress open <b>DEV3 AI Mega Menu → API Config</b>, paste the key and save. The key is encrypted (AES-256-GCM) and never sent to the browser. You can also define <code>DEV3MM_GEMINI_API_KEY</code> in <code>wp-config.php</code>.</li>
+	<li>Optional: choose models (default <code>gemini-2.5-flash</code>, pro <code>gemini-2.5-pro</code>), set a <b>monthly budget</b>, or turn AI off entirely.</li>
+</ol>
+<div class="tip">Everything except the AI buttons works without a key: menus, panels, widgets, styles, locations, the automatic builder, quick audit, keyword icon matching and promo templates.</div>
+
+<h2 id="builder">Menu Builder</h2>
+<img class="shot" src="screenshots/4-menu-builder.png" alt="Menu Builder with the structure list and the panel editor">
+<p>The builder edits real WordPress menus (the same ones as <b>Appearance → Menus</b>).</p>
+<ul>
+	<li><b>Add items</b>: pages, posts, categories, product categories, products or custom links, at the top level or under an item.</li>
+	<li><b>Arrange</b>: ↑ ↓ reorder, ← moves an item out a level, → makes it a sub-item of the previous item. Three levels work best.</li>
+	<li><b>Item settings</b>: Content (label, URL, description, title attribute, CSS classes, new tab), Display (icon, image, badge, show description, hide label, hide on mobile/desktop), Panel (top-level only).</li>
+	<li><b>Live preview</b> shows the real front-end menu with your unsaved changes, on desktop and mobile.</li>
+	<li>Nothing is saved until you click <b>Save menu</b>. Broken links (deleted or unpublished targets) are flagged in red.</li>
+</ul>
+
+<h2 id="panels">Mega panels &amp; widgets</h2>
+<p><b>Automatic columns</b>: each child becomes a column heading with its own children listed below (set the number of columns, 1–6). <b>Custom rows</b>: add rows of columns on a 12-column grid and fill them with widgets. Children you do not place still appear in automatic columns below your rows, so nothing gets lost. The <b>side column</b> sits on the right of the panel (ideal for promos).</p>
+<table>
+	<tr><th>Widget</th><th>What it shows</th></tr>
+	<tr><td>Menu column</td><td>A child item as a heading with its sub-items (optionally with an image).</td></tr>
+	<tr><td>Recent posts</td><td>Latest posts, optionally from one category, with featured images.</td></tr>
+	<tr><td>Products</td><td>WooCommerce best sellers, newest, featured, on sale, a category, or hand-picked products, with price.</td></tr>
+	<tr><td>Search box</td><td>A labelled search form for everything, posts, pages or products.</td></tr>
+	<tr><td>Image</td><td>A media-library image with link and caption.</td></tr>
+	<tr><td>Promo block</td><td>Badge, headline, text, button, image and up to 3 products, in four colour treatments.</td></tr>
+	<tr><td>HTML / Shortcode</td><td>Your own HTML (sanitised) or any shortcode (forms, sliders…).</td></tr>
+	<tr><td>Synced pattern</td><td>A reusable block from the block editor.</td></tr>
+</table>
+
+<h2 id="tabs">Tabs &amp; flyouts</h2>
+<img class="shot" src="screenshots/2-tabs-panel.png" alt="A tabbed mega panel with categories on the left">
+<p><b>Mega panel with tabs</b>: each child is a tab (keyboard: arrow keys, Home, End); its children fill the tab panel, with an optional description and a “View all” link. <b>Flyout</b>: a classic dropdown; deeper levels fly out to the side and flip left near the screen edge. <b>Automatic</b> picks a mega panel when children have their own children, otherwise a flyout.</p>
+
+<h2 id="items">Icons, images, badges, descriptions</h2>
+<ul>
+	<li>60 built-in line icons (searchable picker; the “Use …” button suggests one from the label).</li>
+	<li>Item images: a thumbnail next to the label, or a large image above a column heading.</li>
+	<li>Badges: New, Sale, Hot, Info or a custom colour.</li>
+	<li>“Hide label” keeps the text for screen readers (icon-only items).</li>
+</ul>
+
+<h2 id="locations">Locations &amp; behaviour</h2>
+<p>For every theme location you choose the menu, turn the mega menu on, and set:</p>
+<table>
+	<tr><th>Setting</th><th>Options</th></tr>
+	<tr><td>Style</td><td>Any preset or custom style.</td></tr>
+	<tr><td>Open submenus on</td><td>Hover (with delay; click and keyboard always work) or click only.</td></tr>
+	<tr><td>Animation</td><td>Fade, fade + slide, none (reduced-motion users always get none).</td></tr>
+	<tr><td>Orientation / alignment</td><td>Horizontal bar or vertical sidebar; start, center, end, spread.</td></tr>
+	<tr><td>Mega panel width</td><td>Full window, menu-bar width, or fit content (overridable per item).</td></tr>
+	<tr><td>Mobile</td><td>Breakpoint (600–1200 px or never), accordion or off-canvas drawer (left/right), toggle label.</td></tr>
+	<tr><td>Sticky</td><td>Stick to the top on scroll (desktop, optionally mobile), respecting the admin bar.</td></tr>
+	<tr><td>Search box, aria-label</td><td>Search at the end of the bar; accessible name for the navigation landmark.</td></tr>
+</table>
+
+<h2 id="block-themes">Block themes (Twenty Twenty-Five and others)</h2>
+<p>Block themes do not use menu locations. Two options:</p>
+<ol>
+	<li><b>Add the block</b>: Appearance → Editor → your Header template → add <b>DEV3 AI Mega Menu</b>, choose the menu (and optionally style, trigger, mobile mode).</li>
+	<li><b>Replace the Navigation block</b>: Locations → “Blocks, shortcodes &amp; builders” → <i>Replace the Navigation block</i>: <i>First Navigation block on each page</i> (usually the header) or <i>Every Navigation block</i>, and choose the menu. No template editing needed.</li>
+</ol>
+
+<h2 id="embeds">Block, shortcode, Elementor, WPBakery</h2>
+<pre>[dev3mm_menu menu="main-menu" theme="dark" trigger="click" mobile_mode="offcanvas"]</pre>
+<p>Attributes: <code>menu</code> (id, slug or name), <code>location</code> (use that location's menu and settings), <code>theme</code>, <code>trigger</code>, <code>mobile_mode</code>, <code>orientation</code>, <code>align</code>, <code>animation</code>, <code>breakpoint</code>, <code>sticky</code>. Unset attributes use the “Blocks, shortcodes &amp; builders” settings. <b>Elementor</b>: search “DEV3 AI Mega Menu” in the widget panel. <b>WPBakery</b>: the element is in the “DEV3 AI” category.</p>
+
+<h2 id="styles">Styles</h2>
+<img class="shot" src="screenshots/6-style-editor.png" alt="Style editor with colour fields and a live preview">
+<p>Five presets (Light, Midnight, Indigo, Minimal — inherits your theme, Boutique). Presets are read-only; <b>Duplicate</b> one to edit colours (bar, panels, mobile, badges), bar height, radius, font size/weight/family, spacing, shadow and uppercase labels, with a live preview. Styles are CSS custom properties, so the front-end stylesheet stays small and cacheable.</p>
+
+<h2 id="mobile">Mobile menus</h2>
+<img class="shot" src="screenshots/3-mobile-offcanvas.png" alt="Off-canvas mobile menu with an expanded section" style="max-width:320px">
+<p>Below the breakpoint a <b>Menu</b> button opens an accordion under the bar or an off-canvas drawer with overlay, close button, scroll lock and focus trap. Panels collapse into accordion sections (touch targets ≥ 44 px), tabs become stacked sections, and items can be hidden per device. The layout is decided by CSS before JavaScript runs, so there is no layout shift.</p>
+
+<h2 id="a11y">Accessibility (WCAG 2.2 AA)</h2>
+<ul>
+	<li>WAI <i>disclosure navigation</i> pattern: every submenu has a real <code>&lt;button&gt;</code> with <code>aria-expanded</code> and <code>aria-controls</code>; links stay links. Items without a URL become a single button.</li>
+	<li>Keyboard: Tab, Enter/Space, Escape (closes and returns focus), ←/→ between top items, ↓ opens and enters a panel, ↑/↓ inside flyouts, Home/End; tabs follow the ARIA tabs pattern.</li>
+	<li>Hover only reacts to mouse pointers; touch taps work as expected. Focus leaving a panel closes it.</li>
+	<li><code>aria-current="page"</code>, labelled search fields, a named <code>&lt;nav&gt;</code> landmark, visible focus rings, reduced-motion and forced-colours support.</li>
+</ul>
+
+<h2 id="ai-build">DEV3 AI: Build my menu</h2>
+<p>AI Studio → <b>Build my menu</b> reads published pages (up to 400 by default), post categories, product categories and best-selling products, then asks DEV3 AI for a structure: top items, mega columns, groups, labels in your language and fitting icons. Every link is checked against your real content; invented links are dropped. Review the draft (edit labels, remove items, preview it), then <b>Accept and save menu</b> into a new menu or replace/append to an existing one. Typical time for 200 pages and 50 categories: 15–45 seconds. <b>Auto-build without AI</b> builds a sensible menu from your page hierarchy and categories instantly.</p>
+
+<h2 id="ai-labels">DEV3 AI: Labels &amp; descriptions</h2>
+<p>Suggests short, clear labels and one-line descriptions for every item, in the site language (or the language set in Settings). Each row is editable and selectable; only the rows you apply are changed. Optionally switch on “Show descriptions” for sub-items.</p>
+
+<h2 id="ai-audit">DEV3 AI: UX audit</h2>
+<img class="shot" src="screenshots/5-ux-audit.png" alt="Audit results with a score and issues with fix buttons">
+<p><b>Quick audit</b> (no AI) checks depth (&gt; 3 levels), top-level count (&gt; 8), crowded groups (&gt; 12 links), vague or long labels, duplicates, broken and dead-end links, hidden labels without an icon, and missing Home, Contact and Shop links. <b>Audit with DEV3 AI</b> adds a review of label clarity and grouping and suggests missing pages. You get a 0–100 score and one-click fixes (rename an item, add a missing link).</p>
+
+<h2 id="ai-promo">DEV3 AI: Promo panel</h2>
+<p>Choose a menu item, an occasion (empty = current season), an optional real offer and a tone. DEV3 AI writes a badge, headline, text and button label and picks up to 3 products from the source you choose (on sale, featured, best sellers, newest or a category). It never invents discounts. Edit the draft, then <b>Accept and add to panel</b>: the promo is placed in that item's side column. <b>Use a template</b> works without AI.</p>
+
+<h2 id="ai-icons">DEV3 AI: Icons &amp; images</h2>
+<p>Suggests an icon from the built-in set for every item plus image candidates (the linked page's featured image, the product category thumbnail, or media-library matches). Pick per row and apply. Without AI, <b>Match by keywords</b> does the same with keyword matching.</p>
+
+<h2 id="ai-cost">Budget &amp; usage</h2>
+<p>API Config: monthly budget in USD (AI pauses when reached), AI on/off, caching of repeat requests, PII masking. Usage Logs: requests, tokens and estimated cost per feature and model. Heavy tasks (Build my menu) use a 2048-token thinking budget and a 150-second timeout.</p>
+
+<h2 id="performance">Performance</h2>
+<ul>
+	<li>Front end: ~3 KB JavaScript + ~8 KB CSS (gzipped), no jQuery, deferred, loaded only where a mega menu renders (or always, if you choose).</li>
+	<li>No AI or remote calls on the front end. Images in panels lazy-load.</li>
+</ul>
+
+<h2 id="developers">Developers</h2>
+<h3>Filters &amp; actions</h3>
+<table>
+	<tr><th>Hook</th><th>Purpose</th></tr>
+	<tr><td><code>dev3mm_menu_html</code></td><td>Filter the rendered menu HTML ( $html, $menu_id, $location, $config ).</td></tr>
+	<tr><td><code>dev3mm_widget_html</code></td><td>Filter a rendered panel widget ( $html, $widget ).</td></tr>
+	<tr><td><code>dev3mm_use_for_nav_menu</code></td><td>Return false to keep the theme menu for a <code>wp_nav_menu()</code> call ( $use, $args ).</td></tr>
+	<tr><td><code>dev3mm_icons</code></td><td>Add or replace icons ( name =&gt; [ label, keywords, d ] — 24×24 stroke path).</td></tr>
+	<tr><td><code>dev3mm_presets</code></td><td>Add style presets.</td></tr>
+	<tr><td><code>dev3mm_default_occasion</code></td><td>Default promo occasion per month.</td></tr>
+	<tr><td><code>dev3mm_prompt_dev3mm_build_menu</code>, <code>…_labels</code>, <code>…_audit</code>, <code>…_promo</code>, <code>…_icons</code></td><td>Override AI prompt templates (versioned, with JSON schemas).</td></tr>
+	<tr><td><code>dev3mm_menu_saved</code> (action)</td><td>Fires after the builder saved a menu ( $menu_id ).</td></tr>
+	<tr><td><code>dev3mm_ai_guard</code>, <code>dev3mm_model_prices</code>, <code>dev3mm_capability</code>, <code>dev3mm_manage_capability</code></td><td>AI gate, price table and capabilities (shared DEV3 core).</td></tr>
+</table>
+<p>The core <code>wp_nav_menu_objects</code> filter is applied, so menu-visibility plugins keep working. Item settings are stored in the <code>_dev3mm_item</code> post meta of each menu item; location settings in <code>dev3mm_locations</code>, custom styles in <code>dev3mm_themes</code>. JavaScript: <code>window.dev3mmInit( root )</code> initialises menus injected after page load.</p>
+<h3>REST API (<code>/wp-json/dev3mm/v1/</code>, administrators, REST nonce)</h3>
+<table>
+	<tr><th>Route</th><th>Methods</th></tr>
+	<tr><td><code>menus</code>, <code>menus/&lt;id&gt;</code></td><td>GET list / tree, POST create / save tree, DELETE</td></tr>
+	<tr><td><code>menus/&lt;id&gt;/items</code></td><td>POST partial updates (title, description, config)</td></tr>
+	<tr><td><code>menus/&lt;id&gt;/promo</code></td><td>POST insert an accepted promo into an item's panel</td></tr>
+	<tr><td><code>locations</code>, <code>themes</code></td><td>GET / POST</td></tr>
+	<tr><td><code>preview</code>, <code>content</code>, <code>overview</code></td><td>POST rendered HTML (saved, unsaved or draft), GET content picker, GET dashboard</td></tr>
+	<tr><td><code>build</code>, <code>build/apply</code></td><td>POST draft (mode ai|rules), POST apply accepted draft</td></tr>
+	<tr><td><code>audit</code>, <code>ai/labels</code>, <code>ai/icons</code>, <code>ai/promo</code></td><td>POST drafts (nothing saved)</td></tr>
+</table>
+
+<h2 id="privacy">Privacy</h2>
+<p>Only administrators trigger AI requests. Sent to Google Gemini: your site name and tagline, menu labels and links, titles and IDs of pages, categories and (best-selling) products, and product prices for promos. No visitor or customer data is sent. A privacy-policy snippet naming Google Gemini is added under Settings → Privacy, and the usage log supports the WordPress personal-data exporter and eraser. Optional PII masking removes emails, phone numbers and card numbers from prompts.</p>
+
+<h2 id="faq">FAQ</h2>
+<h3>Does it replace Appearance → Menus?</h3><p>It works with the same menus; you can use either screen. Mega settings live on the menu items.</p>
+<h3>My theme still shows its own mobile button.</h3><p>Some themes add a mobile toggle around the menu location. Hide it with the theme's settings or a line of CSS, or use the block/shortcode in a custom header.</p>
+<h3>Can I use different styles on different menus?</h3><p>Yes: per location, per block, per shortcode (<code>theme=""</code>) and per Elementor/WPBakery widget.</p>
+<h3>Does it work with page caching?</h3><p>Yes. The menu is plain HTML with no per-visitor data and no front-end AI.</p>
+<h3>RTL and translations?</h3><p>Yes: an RTL stylesheet is included and all strings are translatable (<code>languages/dev3-ai-mega-menu.pot</code>).</p>
+
+<h2 id="troubleshooting">Troubleshooting</h2>
+<ul>
+	<li><b>Menu not showing</b>: in Locations, check that a menu is assigned and “Use the DEV3 AI Mega Menu here” is on (classic), or set up the block / Navigation replacement (block themes).</li>
+	<li><b>Panels hidden behind content</b>: raise the header's <code>z-index</code> in your theme, or set the menu bar to sticky.</li>
+	<li><b>Optimisation plugin removes styles</b>: Settings → Load front-end files → On every page.</li>
+	<li><b>AI errors</b>: the message explains the cause (invalid key, quota, budget reached). The non-AI tools keep working.</li>
+</ul>
+
+<h2 id="changelog">Changelog</h2>
+<h3>1.0.0 — 2026-10-25</h3>
+<ul><li>Initial release: mega panels, tabs, flyouts, widgets, styles, locations, block/shortcode/Elementor/WPBakery, accessible mobile menus, and five DEV3 AI tools.</li></ul>
+<p style="color:var(--muted);margin-top:48px">© DEV3 Technologies · <a href="https://dev3.tech/support">dev3.tech/support</a> · Google Gemini is a trademark of Google LLC.</p>
+</main>
+</div>
+</body>
+</html>
